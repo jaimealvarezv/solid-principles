@@ -1,0 +1,30 @@
+### Get all products
+GET http://localhost:5137/api/products
+
+### Get a product by ID
+GET http://localhost:5137/api/products/1
+
+### Create a new product
+POST http://localhost:5137/api/products
+Content-Type: application/json
+
+{
+  "name": "New Product",
+  "price": 99.99,
+  "photo": "newphoto.jpg",
+  "expiryDate": "2024-12-31"
+}
+
+### Update a product
+PUT http://localhost:5137/api/products/1
+Content-Type: application/json
+
+{
+  "name": "Updated Product",
+  "price": 199.99,
+  "photo": "updatedphoto.jpg",
+  "expiryDate": "2024-12-31"
+}
+
+### Delete a product
+DELETE http://localhost:5137/api/products/1

@@ -1,0 +1,96 @@
+# .gitignore for a C# project
+
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Rider directories
+.idea/
+
+# Logs
+*.log
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# DotNetCore
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCopReport.xml
+
+# DotNetTool
+**/.dotnet_tool/
+
+# Coverage Results
+coverage*.json
+coverage*.xml
+coverage*.info
+.coverage
+coverage*.cobertura.xml
+coverage*.lcov
+
+# NCrunch
+*.ncrunchsolution
+*.ncrunchproject
+
+# Chutzpah Test files
+_Chutzpah*
+
+# Web
+wwwroot/node_modules/
+wwwroot/lib/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# User-specific files (Mono Auto Generated Files)
+mono_crash.*
+
+# Mac specific files
+.DS_Store

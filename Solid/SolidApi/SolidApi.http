@@ -1,0 +1,39 @@
+
+
+@SolidApi_HostAddress = http://localhost:5009
+
+### Get all products
+GET {{SolidApi_HostAddress}}/api/products
+Accept: application/json
+
+### Get a product by ID
+GET {{SolidApi_HostAddress}}/api/products/1
+Accept: application/json
+
+### Create a new product
+POST {{SolidApi_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Test Product",
+  "price": 100.0,
+  "photoUrl": "http://example.com/photo.jpg",
+  "expirationDate": "2023-12-31T23:59:59"
+}
+
+### Update an existing product
+PUT {{SolidApi_HostAddress}}/api/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Product",
+  "price": 150.0,
+  "photoUrl": "http://example.com/photo_updated.jpg",
+  "expirationDate": "2024-12-31T23:59:59"
+}
+
+### Delete a product by ID
+DELETE {{SolidApi_HostAddress}}/api/products/1
+Accept: application/json
